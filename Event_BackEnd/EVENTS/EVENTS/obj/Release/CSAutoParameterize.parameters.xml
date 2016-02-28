@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="Event_Connection-Web.config Connection String" description="Event_Connection Connection String used in web.config by the application to access the database." defaultValue="Data Source=10.50.3.157:1521/ATLTSTDB;Persist Security Info=True;&#xD;&#xA;			 user id=events;password=A123456789a" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Murad\\Desktop\\Events_Project_Final_Version\\Event_BackEnd\\EVENTS\\EVENTS\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Event_Connection']/@connectionString" />
+  </parameter>
+</parameters>

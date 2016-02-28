@@ -1,0 +1,69 @@
+</br>
+</br>
+    <ul class="col-md-12">
+	
+		<li class="panel panel-primary" data-collapsed="1" ng-repeat="obj in news">
+			
+			<!-- panel head -->
+			<div class="panel-heading">
+                <img src="http://lorempixum.com/100/100/nature/1">
+				<h3 class="panel-title">{{obj.title}}</h3>
+                <span class="span">{{obj.created_date}}</span>
+				
+				<div class="panel-options">
+					<a href="javascript:(0)" data-rel="collapse"><i class="entypo-down-open"></i></a>
+				</div>
+			</div>
+			
+			<!-- panel body -->
+			<div class="panel-body">
+				
+				<p class="p">{{obj.text}}</p>
+				
+				
+			</div>
+			
+		</li>
+        
+    </ul>
+
+
+
+
+
+
+<style>
+ 
+    .panel-heading :hover {
+      background: #C5C5BB;
+      cursor: pointer;
+    }
+
+    .panel-heading img{
+        float: left;
+        margin: 0 15px 0 0;
+    }
+    
+    .panel-heading h3 {
+        font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+    }
+    
+    .p {
+        font: 200 20px/1.5 Georgia, Times New Roman, serif;
+    }
+     
+    .col-md-12{
+        padding-top: 10px;
+        list-style-type: none;
+    }
+    
+    .panel-body{
+        background: #C5C5BB;
+    }
+    
+    .span{
+        float: right;
+        font: bold 15px/1.5 Helvetica, Verdana, sans-serif;
+    }
+
+</style>

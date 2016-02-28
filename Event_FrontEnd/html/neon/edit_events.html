@@ -1,0 +1,302 @@
+<hr>
+</br>
+</br>
+
+<!--Sport-->
+<div class="row" ng-repeat="obj in sport">
+                <button type="button" class="btn btn-danger" onclick="window.history.back()">Cancel</button>
+                <button type="button" class="btn btn-success" ng-click="updatesport(obj)">Update</button>
+				<!-- Profile -->
+				<div class="event_profile">
+				    <img  ng-src="http://localhost/events/UploadedFiles/{{obj.LOGO_NAME}}" alt="{{obj.TITLE}}"                                       width="500px" height="380px">					
+				</div>
+				
+                <!-- Info -->
+				<div class="event_info">
+                        <h1><input type="text" data-ng-model="obj.TITLE"/></h1>
+					
+					<ul>
+						<li><i></i><a href="javascript:(0)">{{obj.CATEGORY}}</a> / 
+                                   <a href="javascript:(0)">{{obj.SPORT_KIND}}</a></li>
+												 
+                        <li>
+                            <input type="text" data-ng-model="obj.START_DATE"/> <input type="text" data-ng-model="obj.END_DATE "/>                                           </li>  
+                        <li>
+                            <input type="text" data-ng-model="obj.PRICE "/> <input type="text" data-ng-model="obj.PRICE_COST "/>                                           </li>
+						
+                        <li><input type="text" data-ng-model="obj.ADDRESS"/></li>
+				    </ul>
+				</div>
+    
+                
+    
+            <!-- Event Text -->
+                <div class="event_description" >
+                        <h2>About Event</h2>
+                        <h4><strong>Description:</strong></h4> 	
+                    <textarea data-ng-model="obj.DESCRIPTION"></textarea>
+                </div>
+</div>
+
+<!--Concert-->
+<div class="row" ng-repeat="obj in concert">
+                
+                <button type="button" class="btn btn-danger" onclick="window.history.back()">Cancel</button>
+                <button type="button" class="btn btn-success" ng-click="updateconcert(obj)">Update</button>
+                
+				<!-- Profile -->
+				<div class="event_profile">
+				    <img  ng-src="http://localhost/events/UploadedFiles/{{obj.LOGO_NAME}}" alt="{{obj.TITLE}}"                                                              width="500px"  height="380px">					
+				</div>
+				
+                <!-- Info -->
+				<div class="event_info">
+					<h1><input type="text" data-ng-model="obj.TITLE"/></h1>
+					<ul>
+						<li><i></i><a href="javascript:(0)">{{obj.CATEGORY}}</a> / 
+                                   <a href="javascript:(0)">{{obj.CONCERT_KIND}}</a></li>
+												 
+                    <li>
+                        <input type="text" data-ng-model="obj.START_DATE"/> <input type="text" data-ng-model="obj.END_DATE "/>                                   </li>  
+                    <li>
+                         <input type="text" data-ng-model="obj.PRICE "/> <input type="text" data-ng-model="obj.PRICE_COST "/>                                   </li>
+						
+                    <li><input type="text" data-ng-model="obj.ADDRESS"/></li>
+				    </ul>
+                    
+				</div>
+    
+                
+    
+            <!-- Event Text -->
+                <div class="event_description" >
+                        <h2>About Event</h2>
+                        <h4><strong>Singer:</strong> <input type="text" data-ng-model="obj.SINGER"/></h4>
+                        <h4><strong>Organiser:</strong> <input type="text" data-ng-model="obj.ORGANIZER"/></h4>
+                        <h4><strong>Description:</strong> <textarea data-ng-model="obj.DESCRIPTION"></textarea> </h4>			
+                </div>
+</div>
+
+<!--Seminar-->
+<div class="row" ng-repeat="obj in seminar">
+    
+<button type="button" class="btn btn-danger" onclick="window.history.back()">Cancel</button>
+<button type="button" class="btn btn-success" ng-click="updateseminar(obj)">Update</button>
+				<!-- Profile -->
+				<div class="event_profile">
+				    <img class="eventavatar" ng-src="http://localhost/events/UploadedFiles/{{obj.LOGO_NAME}}" alt="obj.TITLE" width="500px" height="380px">					
+				</div>
+				
+                <!-- Info -->
+				<div class="event_info">
+					<h1><input type="text" data-ng-model="obj.TITLE"/></h1>
+					<ul>
+						<li><i></i><a href="javascript:(0)">{{obj.CATEGORY}}</a> / 
+                                   <a href="javascript:(0)">{{obj.SEMINAR_KIND}}</a></li>
+												 
+						<li>
+                            <input type="text" data-ng-model="obj.START_DATE"/> <input type="text" data-ng-model="obj.END_DATE "/>                                   </li>  
+                        <li>
+                             <input type="text" data-ng-model="obj.PRICE "/> <input type="text" data-ng-model="obj.PRICE_COST "/>                                   </li>
+
+                        <li><input type="text" data-ng-model="obj.ADDRESS"/></li>
+				    </ul>
+                    
+				</div>
+    
+                
+    
+            <!-- Event Text -->
+                <div class="event_description" >
+                        <h2>About Event</h2>
+                        <h4><strong>Author:</strong><input type="text" data-ng-model="obj.AUTHOR"/> </h4>
+                        <h4><strong>Subject:</strong><input type="text" data-ng-model="obj.SUBJECT"/></h4>
+                        <h4><strong>Description:</strong> <textarea data-ng-model="obj.DESCRIPTION"></textarea></h4>			
+                </div>
+</div>
+
+<!--Exhibition-->
+<div class="row" ng-repeat="obj in exhibition">
+    
+<button type="button" class="btn btn-danger" onclick="window.history.back()">Cancel</button>
+<button type="button" class="btn btn-success" ng-click="updateexhibition(obj)">Update</button>
+				<!-- Profile -->
+				<div class="event_profile">
+				    <img class="eventavatar" src="http://localhost/events/UploadedFiles/{{obj.LOGO_NAME}}" alt="Valeri Meladzenin konserti" width="500px" height="380px">					
+				</div>
+				
+                <!-- Info -->
+				<div class="event_info">
+					<h1><input type="text" data-ng-model="obj.TITLE"/></h1>
+					<ul>
+						<li><i></i><a href="javascript:(0)">{{obj.CATEGORY}}</a> / 
+                                   <a href="javascript:(0)">{{obj.EXHIBITION_KIND}}</a></li>
+												 
+						<li>
+                            <input type="text" data-ng-model="obj.START_DATE"/> <input type="text" data-ng-model="obj.END_DATE "/>                                   </li>  
+                        <li>
+                             <input type="text" data-ng-model="obj.PRICE "/> <input type="text" data-ng-model="obj.PRICE_COST "/>                                   </li>
+
+                        <li><input type="text" data-ng-model="obj.ADDRESS"/></li>
+				    </ul>
+                    
+				</div>
+    
+                
+    
+            <!-- Event Text -->
+                <div class="event_description" >
+                        <h2>About Event</h2>
+                        <h4><strong>Author:</strong><input type="text" data-ng-model="obj.AUTHOR"/></h4>
+                        <h4><strong>Description:</strong><textarea data-ng-model="obj.DESCRIPTION"></textarea></h4>			
+                </div>
+</div>
+
+<!--Presentation-->
+<div class="row" ng-repeat="obj in presentation">
+    
+<button type="button" class="btn btn-danger" onclick="window.history.back()">Cancel</button>
+<button type="button" class="btn btn-success" ng-click="updatepresentation(obj)">Update</button>
+				<!-- Profile -->
+				<div class="event_profile">
+				    <img class="eventavatar" src="http://localhost/events/UploadedFiles/{{obj.LOGO_NAME}}" alt="obj.TITLE" width="500px" height="380px">					
+				</div>
+				
+                <!-- Info -->
+				<div class="event_info">
+					<h1><input type="text" data-ng-model="obj.TITLE"/></h1>
+					<ul>
+						<li><i></i><a href="javascript:(0)">{{obj.CATEGORY}}</a> / 
+                                   <a href="javascript:(0)">{{obj.PRESENTATION_KIND}}</a></li>
+												 
+						<li>
+                            <input type="text" data-ng-model="obj.START_DATE"/> <input type="text" data-ng-model="obj.END_DATE "/>                                   </li>  
+                        <li>
+                             <input type="text" data-ng-model="obj.PRICE "/> <input type="text" data-ng-model="obj.PRICE_COST "/>                                   </li>
+
+                        <li><input type="text" data-ng-model="obj.ADDRESS"/></li>
+				    </ul>
+                    
+				</div>
+    
+                
+    
+            <!-- Event Text -->
+                <div class="event_description" >
+                        <h2>About Event</h2>
+                        <h4><strong>Author:</strong><input type="text" data-ng-model="obj.AUTHOR"/></h4>
+                        <h4><strong>Description:</strong> <textarea data-ng-model="obj.DESCRIPTION"></textarea></h4>			
+                </div>
+</div>
+
+
+<!--Tour-->
+<div class="row" ng-repeat="obj in tour">
+
+<button type="button" class="btn btn-danger" onclick="window.history.back()">Cancel</button>
+<button type="button" class="btn btn-success" ng-click="updatetour(obj)">Update</button>
+				<!-- Profile -->
+				<div class="event_profile">
+				    <img class="eventavatar" src="http://localhost/events/UploadedFiles/{{obj.LOGO_NAME}}" alt="obj.TITLE" width="500px" height="380px">					
+				</div>
+				
+                <!-- Info -->
+				<div class="event_info">
+					<h1><input type="text" data-ng-model="obj.TITLE"/></h1>
+					<ul>
+						<li><i></i><a href="javascript:(0)">{{obj.CATEGORY}}</a> / 
+                                   <a href="javascript:(0)">{{obj.TOUR_KIND}}</a></li>
+												 
+						<li>
+                            <input type="text" data-ng-model="obj.START_DATE"/> <input type="text" data-ng-model="obj.END_DATE "/>                                   </li>  
+                        <li>
+                             <input type="text" data-ng-model="obj.PRICE "/> <input type="text" data-ng-model="obj.PRICE_COST "/>                                   </li>
+
+                        <li><input type="text" data-ng-model="obj.ADDRESS"/></li>
+				    </ul>
+                    
+				</div>
+    
+                
+    
+            <!-- Event Text -->
+                <div class="event_description" >
+                        <h2>About Event</h2>
+                        <h4><strong>Organizer:</strong><input type="text" data-ng-model="obj.ORGANIZER"/></h4>
+                        <h4><strong>Destination:</strong><input type="text" data-ng-model="obj.DESTINATION"/></h4>
+                        <h4><strong>Transportation:</strong><input type="text" data-ng-model="obj.TRANSPORTATION"/></h4>
+                        <h4><strong>Assembling point:</strong><input type="text" data-ng-model="obj.ASSEMBLING_POINT"/> </h4>
+                        <h4><strong>Description:</strong><textarea data-ng-model="obj.DESCRIPTION"></textarea></h4>			
+                </div>
+</div>
+
+<!--Theatre-->
+<div class="row" ng-repeat="obj in theatre">
+    
+<button type="button" class="btn btn-danger" onclick="window.history.back()">Cancel</button>
+<button type="button" class="btn btn-success" ng-click="updatetheatre(obj)">Update</button>
+				<!-- Profile -->
+				<div class="event_profile">
+				    <img class="eventavatar" src="http://localhost/events/UploadedFiles/{{obj.LOGO_NAME}}" alt="obj.TITLE" width="500px" height="380px">					
+				</div>
+				
+                <!-- Info -->
+				<div class="event_info">
+					<h1><input type="text" data-ng-model="obj.TITLE"/></h1>
+					<ul>
+						<li><i></i><a href="javascript:(0)">{{obj.CATEGORY}}</a> / 
+                                   <a href="javascript:(0)">{{obj.THEATRE_KIND}}</a></li>
+												 
+						<li>
+                            <input type="text" data-ng-model="obj.START_DATE"/> <input type="text" data-ng-model="obj.END_DATE "/>                                   </li>  
+                        <li>
+                             <input type="text" data-ng-model="obj.PRICE "/> <input type="text" data-ng-model="obj.PRICE_COST "/>                                   </li>
+
+                        <li><input type="text" data-ng-model="obj.ADDRESS"/></li>
+				    </ul>
+                    
+				</div>
+    
+                
+    
+            <!-- Event Text -->
+                <div class="event_description" >
+                        <h2>About Event</h2>
+                        <h4><strong>Organizer:</strong><input type="text" data-ng-model="obj.ORGANIZER"/></h4>
+                        <h4><strong>Senarist:</strong><input type="text" data-ng-model="obj.SENARIST"/></h4>
+                        <h4><strong>Producer:</strong><input type="text" data-ng-model="obj.PRODUCER"/></h4>
+                        <h4><strong>Description:</strong> <textarea data-ng-model="obj.DESCRIPTION"></textarea></h4>			
+                </div>
+</div>
+
+<div id="show_map" style="width:inherit;height:400px;"></div>
+
+<style>
+    
+    .row{
+        padding: 20px;
+    }
+    .event_profile{
+        float: left;
+        
+    }
+    
+    .event_info {
+        float: left;
+        padding-left:  50px;
+        padding-right: 50px;
+        max-width: 100ch;
+    }
+    
+    
+    .event_info li {
+        font-size: 15px;
+    }
+    
+    .event_description{
+        float: left;
+        clear: left;
+        padding: 20px;
+    }
+    
+</style>

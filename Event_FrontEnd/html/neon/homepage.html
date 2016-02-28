@@ -1,0 +1,67 @@
+<hr />
+<br>
+
+<div class="page">
+	
+	
+	<div class="main-content">
+		 
+
+        
+<!--Events-->
+        <div class="gallery-env">
+
+  
+	<div class="col-sm-4" ng-repeat="obj in events">
+			
+			<article class="album">
+				<div ng-click="selectPost(obj.ID,obj.CATEGORY_ID)">
+				<header>
+					
+					<a href="javascript:void(0)" >
+						<img ng-src="http://localhost/events/UploadedFiles/{{obj.LOGO_NAME}}" alt="" 
+                             class="img-circle" width="5" />
+					</a>
+										
+				</header>
+				
+				<section class="album-info">
+					<h3><a href="javascript:void(0)">{{obj.TITLE}}</a></h3>
+					<p>Date: {{obj.START_DATE}}</p>
+				</section>
+					</div>
+				<footer>
+					
+					<div class="album-options">
+				<a href="javascript:void(0);" ng-click="editPost(obj.ID,obj.CATEGORY_ID)" placeholder="Edit event">
+							<i class="glyphicon glyphicon-pencil"></i>
+						</a>
+						
+						<a href="javascript:void(0)" ng-click="delete(obj)">
+							<i class="entypo-trash"></i>
+						</a>
+					</div>
+					
+				</footer>
+				
+			</article>
+	
+		
+		
+	</div>
+
+</div>
+
+<!--Pagination-->
+      <pagination  total-items="total_events" ng-model="currentPage" class="pagination-sm" ng-change="pageChanged()"
+       items-per-page="entryLimit"  max-size="5" boundary-links="true"></pagination>
+    
+    
+    
+</div>
+    
+    
+
+</div>
+
+   

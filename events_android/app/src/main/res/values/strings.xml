@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Events</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Categories-->
+    <string-array name="categories_array">
+        <item>All Events</item>
+        <item>Sport</item>
+        <item>Concert</item>
+        <item>Theatre</item>
+        <item>Presentation</item>
+        <item>Exhibition</item>
+        <item>Tour</item>
+        <item>Seminar</item>
+    </string-array>
+
+    <!-- Sport Kinds-->
+    <string-array name="sport_kinds_array">
+        // here will be all sports
+        <item>Football</item>
+        <item>Volleyball</item>
+        <item>Basketball</item>
+        <item>Tennis</item>
+        <item>Judo</item>
+        <item>Wrestling</item>
+        <item>Boxing</item>
+        <item>Chess</item>
+        <item>Weight Lifting</item>
+        <item>Golf</item>
+        <item>Karate</item>
+        <item>Swimming</item>
+    </string-array>
+
+    <!-- Concert Kinds-->
+    <string-array name="concert_kinds_array">
+
+        <item>Pop</item>
+        <item>Rock</item>
+        <item>Classic</item>
+        <item>Jazz</item>
+    </string-array>
+
+    <!-- Tour Kinds-->
+    <string-array name="tour_kinds_array">
+        <item>Voyage</item>
+        <item>Practice Excursion</item>
+    </string-array>
+
+    <!-- Exhibition Kinds-->
+    <string-array name="exhibition_kinds_array">
+        <item>Education</item>
+        <item>Art</item>
+        <item>Painting</item>
+        <item>Technology</item>
+    </string-array>
+
+    <!-- Seminar Kinds-->
+    <string-array name="seminar_kinds_array">
+        <item>Career</item>
+        <item>Education and Technology</item>
+        <item>Personal Development</item>
+        <item>Economy</item>
+        <item>Psychology</item>
+        <item>Welfare</item>
+    </string-array>
+
+    <!-- Theatre Kinds-->
+    <string-array name="theatre_kinds_array">
+
+        <item>Dram</item>
+        <item>Romantic</item>
+        <item>Comedy</item>
+    </string-array>
+
+    <!-- Presentation Kinds-->
+    <string-array name="presentation_kinds_array">
+
+        <item>Book</item>
+        <item>Film</item>
+        <item>Album</item>
+        <item>Clip</item>
+        <item>Project</item>
+        <item>Technology</item>
+    </string-array>
+
+</resources>

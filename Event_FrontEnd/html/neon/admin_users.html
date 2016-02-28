@@ -1,0 +1,300 @@
+	<link rel="stylesheet" href="assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
+	<link rel="stylesheet" href="assets/css/font-icons/entypo/css/entypo.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/neon-core.css">
+	<link rel="stylesheet" href="assets/css/neon-theme.css">
+	<link rel="stylesheet" href="assets/css/neon-forms.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="business_logic/alertifyjs/css/alertify.rtl.min.css">
+    <link href="business_logic/alertifyjs/css/alertify.css" rel="stylesheet">
+    <link href="business_logic/alertifyjs/css/themes/default.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/js/jvectormap/jquery-jvectormap-1.2.2.css">
+	<link rel="stylesheet" href="assets/js/rickshaw/rickshaw.min.css">
+    
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/js/angular/angular.js"></script>
+    <script src="assets/js/angular/angular-route.js"></script>
+    <script src="assets/js/angular/angular-cookies.js"></script>
+    <script src="assets/js/angular/ng-table.js"></script>
+    <script src="assets/js/angular/angular-animate.js"></script>
+
+    <script src="assets/js/angular/angular-sanitize.js"></script>
+
+    <script src="business_logic/app.js"></script>
+    <script src="business_logic/controllers/admin_users.js"></script>
+
+	<script src="assets/js/jquery-1.11.0.min.js"></script>
+	<script src="assets/js/angular/dir-paginate.js"></script>
+	<!-- Bottom Scripts -->
+	<script src="assets/js/gsap/main-gsap.js"></script>
+	<script src="assets/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+	<script src="assets/js/joinable.js"></script>
+	<script src="assets/js/resizeable.js"></script>
+	<script src="assets/js/neon-api.js"></script>
+	<script src="assets/js/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+	<script src="assets/js/jvectormap/jquery-jvectormap-europe-merc-en.js"></script>
+	<script src="assets/js/jquery.sparkline.min.js"></script>
+	<script src="assets/js/rickshaw/vendor/d3.v3.js"></script>
+	<script src="assets/js/rickshaw/rickshaw.min.js"></script>
+	<script src="assets/js/raphael-min.js"></script>
+	<script src="assets/js/morris.min.js"></script>
+	<script src="assets/js/toastr.js"></script>
+	<script src="assets/js/neon-chat.js"></script>
+	<script src="assets/js/neon-custom.js"></script>
+	<script src="assets/js/neon-demo.js"></script>
+    <script src="business_logic/alertifyjs/alertify.js"></script>
+    
+    <!--lazimsiz library olmalidi-->
+    
+    <style>
+        input.delete {
+            background: url("https://www.quickbase.com/user-assistance/images/delete-icon.png") no-repeat scroll 0 0 transparent;
+            height: 25px;
+            width: 25px;
+        }
+        
+        input.edit {
+            background: url("http://okmazad.com/chat/images/edit.png") no-repeat scroll 0 0 transparent;
+            height: 25px;
+            width: 25px;
+        }
+        
+        div.none {
+            display: none;
+        }
+        
+        table.qwe {
+            height: 10px;
+        }
+        
+        .add_edit {
+            float: right;
+            margin-right: 120px;
+            border-radius: 4px;
+            width: 250px;
+            height: 30px;
+        }
+        
+        .add_edit_day {
+/*            float: left;*/
+            margin-left: 38px;
+            border-radius: 4px;
+            width: 80px;
+            height: 30px;
+        }
+        
+        .add_edit_month {
+/*            float: left;*/
+            margin-left: 3px;
+            border-radius: 4px;
+            width: 80px;
+            height: 30px;
+        }
+        
+        .add_edit_year {
+/*            float: left;*/
+            margin-left: 3px;
+            border-radius: 4px;
+            width: 80px;
+            height: 30px;
+        }
+        
+        input.search {
+            border-radius: 4px;
+            width: 250px;
+            height: 30px;
+        }
+        
+        th {
+            max-width: 200px
+        }
+    </style>
+	
+	
+<hr />
+<br>
+
+<div class="page-body  page-fade">
+
+
+	
+	
+	<div class="main-content">
+		
+
+<button type="button" class="btn btn-default btn-icon" ng-click ="adduser()">
+   Add User
+   <i class="entypo-user-add"></i>
+</button>
+        <br/>
+        <br/>
+        
+<!--<input type="button" ng-click="get_all_users()" value="OK"/> 
+        <br/>
+        <br/>-->
+<form class="form-inline">
+  <div class="form-group">
+    <input type="text" ng-model="search" class="form-control" placeholder="Search">
+  </div>
+</form><br>
+<table class="table table-bordered table-striped datatable" id="table-2" >
+	<thead>
+		<tr>
+            
+            <th>Name</th>
+			<th>Surname</th>
+            <th>Username</th>
+			<th>Email</th>
+            <th>Birthday</th>
+            <th>Gender</th>
+            <th>Status</th>
+            <th>Added_By</th>
+            <th>Edited_By</th>
+            <th>Modified_By</th>
+            <th colspan="2">Edit & Delete</th>
+		</tr>
+	</thead>
+	
+	<tbody >
+		<tr ng-repeat="user in users |filter:search">
+			<td>{{ user.Name}}</td>
+			<td>{{ user.Surname}}</td>
+			<td>{{ user.Username}}</td>
+			<td>{{ user.Email}}</td>
+			<td>{{ user.Birthday}}</td>
+			<td>{{ user.Gender}}</td>
+            <td>{{ user.Status}}</td>
+			<td>{{ user.Added_by}}</td>
+			<td>{{ user.Edited_by}}</td>
+            <td>{{ user.Modified_by}}</td>
+            
+			<td>
+				<a href="#" class="btn btn-default btn-sm btn-icon icon-left" 
+                   ng-click = "edit_user_model(user)">
+					<i class="entypo-pencil"></i>
+					Edit
+				</a>
+				
+				<a href="#" class="btn btn-danger btn-sm btn-icon icon-left" ng-click="Delete_user(user.Id)">
+					<i class="entypo-cancel"></i>
+					Delete
+				</a>
+			</td>
+            
+		</tr>
+	</tbody>
+</table>
+        
+        
+
+	
+        <div class="none">
+        <form id="addForm">
+            <ol>
+                <label> Username: </label>
+                <input class="add_edit" required id="addusername" type="text" ng-model="username" />
+            </ol>
+            <ol>
+                <label> Password: </label>
+                <input class="add_edit" required id="addpassword" type="password" ng-model="password"/>
+            </ol>
+            <ol>
+                <label> Name: </label>
+                <input class="add_edit" required id="addname" type="text" ng-model="name" />
+            </ol>
+            <ol>
+                <label> Surname: </label>
+                <input class="add_edit" required id="addsurname" type="text" ng-model="surname" />
+            </ol>
+            <ol>
+                <label> Email: </label>
+                <input class="add_edit" required id="addemail" type="email" ng-model="email" />
+            </ol>
+            <ol>
+                <label> Birthday: </label>
+                <input class="add_edit_day" id="birthday" type="text" ng-model="day" placeholder="day"/> 
+                <input class="add_edit_month" id="birthmonth" type="text" ng-model="month" placeholder="month" />
+                <input class="add_edit_year" id="birthyear" type="text" ng-model="year" placeholder="year"/>
+                
+                         
+            </ol>
+            <ol>
+                <label> Gender: </label>
+                <select id="addgender" class="add_edit" ng-model = "gender">
+                    <option selected>Please select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </ol>
+            <ol>
+            <label> Image: </label> <input type="file" accept="image/*" image="image" ng-model = "image"/>
+            </ol>
+
+            <ol>
+                <input type="submit" value="Add" ng-click="add(username,password,name,surname,email,gender)" />
+            </ol>
+             <div id="show_message2"></div>
+
+        </form>
+    </div>
+        
+        <!---UPDATE USERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR-->
+        
+        <div class="none">
+        <form id="editForm" >
+            <input type="hidden" id="editid" ng-model = "selected_user_model.Id">
+            <ol>
+                <label> Username: </label>
+                <input class="add_edit"  id="editusername" type="text" ng-model="selected_user_model.Username" />
+            </ol>
+            <ol>
+                <label> Name: </label>
+                <input class="add_edit"  id="editname" type="text" ng-model="selected_user_model.Name"   />
+            </ol>
+            <ol>
+                <label> Surname: </label>
+                <input class="add_edit"  id="editsurname" type="text" ng-model="selected_user_model.Surname"   />
+            </ol>
+            <ol>
+                <label> Email: </label>
+                <input class="add_edit"  id="editemail" type="email" ng-model="selected_user_model.Email"  />
+            </ol>
+            <ol>
+                <label> Birthday: </label>
+                <input class="add_edit_day" id="birthday" type="text" ng-model="day" placeholder="day"/> 
+                <input class="add_edit_month" id="birthmonth" type="text" ng-model="month" placeholder="month" />
+                <input class="add_edit_year" id="birthyear" type="text" ng-model="year" placeholder="year"/>
+                
+                         
+            </ol>
+            <ol>
+                <label> Gender: </label>
+                <select id="editgender" class="add_edit" ng-model = "selected_user_model.Gender"  >
+                    <option selected>Please select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </ol>
+            <ol>
+            <input type="file" accept="image/*" image="image" ng-model = "image"/>
+            </ol>
+
+            <ol>
+                <input type="submit" value="Edit" ng-click="edit(selected_user_model)" />
+            </ol>
+             <div id="show_message1s"></div>
+
+        </form>
+    </div>
+        <script>
+            
+        </script>
+    
+
+</div>
+
+</div>

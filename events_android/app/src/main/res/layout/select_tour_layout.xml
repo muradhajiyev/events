@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- height of appbar -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/MyAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:fitsSystemWindows="true"
+            android:background="@drawable/error_image"
+            app:contentScrim="@color/colorPrimary"
+            app:expandedTitleTextAppearance="@style/ExpandedTitleStyle">
+
+            <ImageView
+                android:id="@+id/bgheader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:fitsSystemWindows="true" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/MyToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:theme="@style/ToolbarColoredBackArrow">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/refresh"
+                    android:src="@android:drawable/stat_notify_sync"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_gravity="right"
+                    android:paddingRight="10dp"/>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dip">
+
+            <!--Location & Price-->
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="2">
+
+                    <!--Location-->
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="75dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/location"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Location"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="#FFFFFF"
+                            android:background="@color/colorPrimary"
+                            android:textSize="20dp"
+                            android:padding="3dp"/>
+
+                        <TextView
+                            android:id="@+id/address_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/location"
+                            android:text="Location example"
+                            android:padding="3dp"
+                            android:textColor="@color/navigationBarColor"/>
+
+                    </RelativeLayout>
+
+                    <!--Devider-->
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray"
+                        android:padding="5dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <!--Price-->
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="75dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Price"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="#FFFFFF"
+                            android:background="@color/colorPrimary"
+                            android:textSize="20dp"
+                            android:padding="3dp"/>
+
+                        <TextView
+                            android:id="@+id/price_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/price"
+                            android:text="Free 0 AZN"
+                            android:padding="3dp"
+                            android:textColor="@color/navigationBarColor"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <!--Start Date & End Date-->
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="2">
+
+                    <!--Start Date-->
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="75dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/start"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Start Date"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="#FFFFFF"
+                            android:background="@color/colorPrimary"
+                            android:textSize="20dp"
+                            android:padding="3dp"/>
+
+                        <TextView
+                            android:id="@+id/startdate_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/start"
+                            android:text="Start Date example"
+                            android:padding="3dp"
+                            android:textColor="@color/navigationBarColor"/>
+
+                    </RelativeLayout>
+
+                    <!--Devider-->
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray"
+                        android:padding="5dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <!--End Date-->
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="75dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/end"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="End Date"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="#FFFFFF"
+                            android:background="@color/colorPrimary"
+                            android:textSize="20dp"
+                            android:padding="3dp"/>
+
+                        <TextView
+                            android:id="@+id/enddate_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/end"
+                            android:text="Free 0 AZN"
+                            android:padding="3dp"
+                            android:textColor="@color/navigationBarColor"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <!--Organizer & Destination-->
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="2">
+
+                    <!--Organizer-->
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="75dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/organizer"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Organizer"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="#FFFFFF"
+                            android:background="@color/colorPrimary"
+                            android:textSize="20dp"
+                            android:padding="3dp"/>
+
+                        <TextView
+                            android:id="@+id/organizer_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/organizer"
+                            android:text="Jennifer L."
+                            android:padding="3dp"
+                            android:textColor="@color/navigationBarColor"/>
+
+                    </RelativeLayout>
+                    <!--Devider-->
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray"
+                        android:padding="5dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <!--Destination-->
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="75dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/destination"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Destination"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="#FFFFFF"
+                            android:background="@color/colorPrimary"
+                            android:textSize="20dp"
+                            android:padding="3dp"/>
+
+                        <TextView
+                            android:id="@+id/destination_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/destination"
+                            android:text="Jennifer L."
+                            android:padding="3dp"
+                            android:textColor="@color/navigationBarColor"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <!--Transportation & Assembling point-->
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="2">
+
+                    <!--Transportation-->
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="75dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/transportation"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Transportation"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="#FFFFFF"
+                            android:background="@color/colorPrimary"
+                            android:textSize="20dp"
+                            android:padding="3dp"/>
+
+                        <TextView
+                            android:id="@+id/transportation_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/transportation"
+                            android:text="Jennifer L."
+                            android:padding="3dp"
+                            android:textColor="@color/navigationBarColor"/>
+
+                    </RelativeLayout>
+                    <!--Devider-->
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray"
+                        android:padding="5dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <!--Assembling point-->
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="75dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/assemblingpoint"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Assembling point"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="#FFFFFF"
+                            android:background="@color/colorPrimary"
+                            android:textSize="20dp"
+                            android:padding="3dp"/>
+
+                        <TextView
+                            android:id="@+id/assemblingpoint_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/assemblingpoint"
+                            android:text="Jennifer L."
+                            android:padding="3dp"
+                            android:textColor="@color/navigationBarColor"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Description-->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                card_view:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Description"
+                        android:padding="5dp"
+                        android:textColor="#FFFFFF"
+                        android:background="@color/colorPrimary"/>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"
+                        android:padding="5dp"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/description_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:text="test description test test test test test test test test test test
+                        test testssssssssssssssss ssssssss sssssssss ssssssssssssssssssss  ss  Murad"
+                            android:padding="5dp"
+                            android:maxLines="2"
+                            android:textColor="@color/navigationBarColor"/>
+
+                        <TextView
+                            android:id="@+id/more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="More"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@+id/description_textview"
+                            android:layout_marginRight="6dp"/>
+
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- Map-->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                card_view:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Map"
+                        android:padding="5dp"
+                        android:textColor="#FFFFFF"
+                        android:background="@color/colorPrimary"/>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"
+                        android:padding="5dp"/>
+
+                    <fragment
+                        android:id="@+id/map"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        class="com.google.android.gms.maps.MapFragment" />
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

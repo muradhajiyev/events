@@ -1,0 +1,8 @@
+/home/delone_lore/Desktop/Events_Project_Final_Version/Event_BackEnd/EVENTS/EVENTS/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/delone_lore/Desktop/Events_Project_Final_Version/Event_BackEnd/EVENTS/EVENTS/obj/Debug/EVENTS.dll
+/home/delone_lore/Desktop/Events_Project_Final_Version/Event_BackEnd/EVENTS/EVENTS/bin/Newtonsoft.Json.dll
+/home/delone_lore/Desktop/Events_Project_Final_Version/Event_BackEnd/EVENTS/EVENTS/bin/System.Net.Http.Formatting.dll
+/home/delone_lore/Desktop/Events_Project_Final_Version/Event_BackEnd/EVENTS/EVENTS/bin/System.Web.Cors.dll
+/home/delone_lore/Desktop/Events_Project_Final_Version/Event_BackEnd/EVENTS/EVENTS/bin/System.Web.Http.dll
+/home/delone_lore/Desktop/Events_Project_Final_Version/Event_BackEnd/EVENTS/EVENTS/bin/System.Web.Http.Cors.dll
+/home/delone_lore/Desktop/Events_Project_Final_Version/Event_BackEnd/EVENTS/EVENTS/bin/System.Web.Http.WebHost.dll

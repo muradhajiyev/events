@@ -1,0 +1,273 @@
+<hr>
+</br>
+</br>
+
+<!--Sport-->
+<div class="row" ng-repeat="obj in sport">
+                <button type="button" class="btn btn-success" ng-click="selectPost(obj.id,obj.category_id)">Edit</button>
+				<!-- Profile -->
+				<div class="event_profile">
+				    <img  ng-src="http://localhost/events/UploadedFiles/{{obj.logo_name}}" alt="{{obj.title}}"                                       width="500px" height="380px">					
+				</div>
+	
+				
+                <!-- Info -->
+				<div class="event_info">
+                        <h1>{{obj.title}}</h1>
+					
+					<ul>
+						<li><i></i><a href="javascript:(0)">{{obj.category}}</a> / 
+                                   <a href="javascript:(0)">{{obj.kind}}</a></li>
+												 
+						<li>{{obj.start_date}} - {{obj.end_date}}</li>
+						<li>{{obj.price}} {{obj.price_cost}} AZN</li>
+                        <li>{{obj.address}}</li>
+				    </ul>
+				</div>
+    
+                
+    
+            <!-- Event Text -->
+                <div class="event_description" >
+                        <h2>About Event</h2>
+                        <h4><strong>Description:</strong> {{obj.description}}</h4>	
+                </div>
+</div>
+
+<!--Concert-->
+<div class="row" ng-repeat="obj in concert">
+<button type="button" class="btn btn-success" ng-click="selectPost(obj.id,obj.category_id)">Edit</button>
+				<!-- Profile -->
+				<div class="event_profile">
+				    <img  ng-src="http://localhost/events/UploadedFiles/{{obj.logo_name}}" alt="{{obj.title}}"                                                              width="500px"  height="380px">					
+				</div>
+				
+                <!-- Info -->
+				<div class="event_info">
+					<h1>{{obj.title}}</h1>
+					<ul>
+						<li><i></i><a href="javascript:(0)">{{obj.category}}</a> / 
+                                   <a href="javascript:(0)">{{obj.kind}}</a></li>
+												 
+						<li><i></i>{{obj.start_date}} - {{obj.end_date}}</li>
+						<li><i></i>{{obj.price}} {{obj.price_cost}} AZN</li>
+                        <li><i></i>{{obj.address}}</li>
+				    </ul>
+                    
+				</div>
+    
+                
+    
+            <!-- Event Text -->
+                <div class="event_description" >
+                        <h2>About Event</h2>
+                        <h4><strong>Singer:</strong> {{obj.singer}}</h4>
+                        <h4><strong>Organiser:</strong> {{obj.organizer}}</h4>
+                        <h4><strong>Description:</strong> {{obj.description}}</h4>			
+                </div>
+</div>
+
+<!--Seminar-->
+<div class="row" ng-repeat="obj in seminar">
+<button type="button" class="btn btn-success" ng-click="selectPost(obj.id,obj.category_id)">Edit</button>
+				<!-- Profile -->
+				<div class="event_profile">
+				    <img class="eventavatar" src="http://localhost/events/UploadedFiles/{{obj.logo_name}}" alt="Valeri Meladzenin konserti" width="500px" height="380px">					
+				</div>
+				
+                <!-- Info -->
+				<div class="event_info">
+					<h1>{{obj.title}}</h1>
+					<ul>
+						<li><i></i><a href="javascript:(0)">{{obj.category}}</a> / 
+                                   <a href="javascript:(0)">{{obj.kind}}</a></li>
+												 
+						<li><i></i>{{obj.start_date}} - {{obj.end_date}}</li>
+						<li><i></i>{{obj.price}} {{obj.price_cost}} AZN</li>
+                        <li><i></i>{{obj.address}}</li>
+				    </ul>
+                    
+				</div>
+    
+                
+    
+            <!-- Event Text -->
+                <div class="event_description" >
+                        <h2>About Event</h2>
+                        <h4><strong>Author:</strong> {{obj.author}}</h4>
+                        <h4><strong>Subject:</strong> {{obj.subject}}</h4>
+                        <h4><strong>Description:</strong> {{obj.description}}</h4>			
+                </div>
+</div>
+
+<!--Exhibition-->
+<div class="row" ng-repeat="obj in exhibition">
+<button type="button" class="btn btn-success" ng-click="selectPost(obj.id,obj.category_id)">Edit</button>
+				<!-- Profile -->
+				<div class="event_profile">
+				    <img class="eventavatar" src="http://localhost/events/UploadedFiles/{{obj.logo_name}}" alt="Valeri Meladzenin konserti" width="500px" height="380px">					
+				</div>
+				
+                <!-- Info -->
+				<div class="event_info">
+					<h1>{{obj.title}}</h1>
+					<ul>
+						<li><i></i><a href="javascript:(0)">{{obj.category}}</a> / 
+                                   <a href="javascript:(0)">{{obj.kind}}</a></li>
+												 
+						<li><i></i>{{obj.start_date}} - {{obj.end_date}}</li>
+						<li><i></i>{{obj.price}} {{obj.price_cost}} AZN</li>
+                        <li><i></i>{{obj.address}}</li>
+				    </ul>
+                    
+				</div>
+    
+                
+    
+            <!-- Event Text -->
+                <div class="event_description" >
+                        <h2>About Event</h2>
+                        <h4><strong>Author:</strong> {{obj.author}}</h4>
+                        <h4><strong>Description:</strong> {{obj.description}}</h4>			
+                </div>
+</div>
+
+<!--Presentation-->
+<div class="row" ng-repeat="obj in presentation">
+<button type="button" class="btn btn-success" ng-click="selectPost(obj.id,obj.category_id)">Edit</button>
+				<!-- Profile -->
+				<div class="event_profile">
+				    <img class="eventavatar" src="http://localhost/events/UploadedFiles/{{obj.logo_name}}" alt="Valeri Meladzenin konserti" width="500px" height="380px">					
+				</div>
+				
+                <!-- Info -->
+				<div class="event_info">
+					<h1>{{obj.title}}</h1>
+					<ul>
+						<li><i></i><a href="javascript:(0)">{{obj.category}}</a> / 
+                                   <a href="javascript:(0)">{{obj.kind}}</a></li>
+												 
+						<li><i></i>{{obj.start_date}} - {{obj.end_date}}</li>
+						<li><i></i>{{obj.price}} {{obj.price_cost}} AZN</li>
+                        <li><i></i>{{obj.address}}</li>
+				    </ul>
+                    
+				</div>
+    
+                
+    
+            <!-- Event Text -->
+                <div class="event_description" >
+                        <h2>About Event</h2>
+                        <h4><strong>Author:</strong> {{obj.author}}</h4>
+                        <h4><strong>Description:</strong> {{obj.description}}</h4>			
+                </div>
+</div>
+
+
+<!--Tour-->
+<div class="row" ng-repeat="obj in tour">
+<button type="button" class="btn btn-success" ng-click="selectPost(obj.id,obj.category_id)">Edit</button>
+				<!-- Profile -->
+				<div class="event_profile">
+				    <img class="eventavatar" src="http://localhost/events/UploadedFiles/{{obj.logo_name}}" alt="Valeri Meladzenin konserti" width="500px" height="380px">					
+				</div>
+				
+                <!-- Info -->
+				<div class="event_info">
+					<h1>{{obj.title}}</h1>
+					<ul>
+						<li><i></i><a href="javascript:(0)">{{obj.category}}</a> / 
+                                   <a href="javascript:(0)">{{obj.kind}}</a></li>
+												 
+						<li><i></i>{{obj.start_date}} - {{obj.end_date}}</li>
+						<li><i></i>{{obj.price}} {{obj.price_cost}} AZN</li>
+                        <li><i></i>{{obj.address}}</li>
+				    </ul>
+                    
+				</div>
+    
+                
+    
+            <!-- Event Text -->
+                <div class="event_description" >
+                        <h2>About Event</h2>
+                        <h4><strong>Organizer:</strong> {{obj.organizer}}</h4>
+                        <h4><strong>Destination:</strong> {{obj.destination}}</h4>
+                        <h4><strong>Transportation:</strong> {{obj.transportation}}</h4>
+                        <h4><strong>Assembling point:</strong> {{obj.assembling_point}}</h4>
+                        <h4><strong>Description:</strong> {{obj.description}}</h4>			
+                </div>
+</div>
+
+<!--Theatre-->
+<div class="row" ng-repeat="obj in theatre">
+<button type="button" class="btn btn-success" ng-click="selectPost(obj.id,obj.category_id)">Edit</button>
+				<!-- Profile -->
+				<div class="event_profile">
+				    <img class="eventavatar" src="http://localhost/events/UploadedFiles/{{obj.logo_name}}" alt="Valeri Meladzenin konserti" width="500px" height="380px">					
+				</div>
+				
+                <!-- Info -->
+				<div class="event_info">
+					<h1>{{obj.title}}</h1>
+					<ul>
+						<li><i></i><a href="javascript:(0)">{{obj.category}}</a> / 
+                                   <a href="javascript:(0)">{{obj.kind}}</a></li>
+												 
+						<li><i></i>{{obj.start_date}} - {{obj.end_date}}</li>
+						<li><i></i>{{obj.price}} {{obj.price_cost}} AZN</li>
+                        <li><i></i>{{obj.address}}</li>
+				    </ul>
+                    
+				</div>
+    
+                
+    
+            <!-- Event Text -->
+                <div class="event_description" >
+                        <h2>About Event</h2>
+                        <h4><strong>Organizer:</strong> {{obj.organizer}}</h4>
+                        <h4><strong>Senarist:</strong> {{obj.senarist}}</h4>
+                        <h4><strong>Producer:</strong> {{obj.producer}}</h4>
+                        <h4><strong>Description:</strong> {{obj.description}}</h4>			
+                </div>
+</div>
+
+
+<div id="show_map" style="width:inherit;height:400px;"></div>
+
+<style>
+    
+    .row{
+        padding: 20px;
+    }
+    .event_profile{
+        float: left;
+        
+    }
+    
+    .event_info {
+        float: left;
+        padding-left:  50px;
+        padding-right: 50px;
+        max-width: 100ch;
+    }
+    
+    
+    .event_info li {
+        font-size: 15px;
+    }
+    
+    .event_description{
+        float: left;
+        clear: left;
+        padding: 20px;
+    }
+    
+</style>
+
+
+    
+				
+				

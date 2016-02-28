@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.atl.events.events_android_app" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/EventsMaterialTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".select_activities.SportActivity"
+            android:label="SportActivity">
+        </activity>
+        <activity
+            android:name=".select_activities.ConcertActivity"
+            android:label="ConcertActivity">
+        </activity>
+        <activity
+            android:name=".select_activities.ExhibitionActivity"
+            android:label="ExhibitionActivity">
+        </activity>
+        <activity
+            android:name=".select_activities.PresentationActivity"
+            android:label="PresentationActivity">
+        </activity>
+        <activity
+            android:name=".select_activities.SeminarActivity"
+            android:label="SeminarActivity">
+        </activity>
+        <activity
+            android:name=".select_activities.TheatreActivity"
+            android:label="TheatreActivity">
+        </activity>
+        <activity
+            android:name=".select_activities.TourActivity"
+            android:label="TourActivity">
+        </activity>
+
+    </application>
+
+</manifest>

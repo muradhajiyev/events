@@ -1,0 +1,17 @@
+C:\Users\Murad\Desktop\Events_Project_Final_Version\Event_BackEnd\EVENTS\EVENTS\bin\EVENTS.dll.config
+C:\Users\Murad\Desktop\Events_Project_Final_Version\Event_BackEnd\EVENTS\EVENTS\bin\EVENTS.dll
+C:\Users\Murad\Desktop\Events_Project_Final_Version\Event_BackEnd\EVENTS\EVENTS\bin\EVENTS.pdb
+C:\Users\Murad\Desktop\Events_Project_Final_Version\Event_BackEnd\EVENTS\EVENTS\bin\Newtonsoft.Json.dll
+C:\Users\Murad\Desktop\Events_Project_Final_Version\Event_BackEnd\EVENTS\EVENTS\bin\System.Net.Http.Formatting.dll
+C:\Users\Murad\Desktop\Events_Project_Final_Version\Event_BackEnd\EVENTS\EVENTS\bin\System.Web.Cors.dll
+C:\Users\Murad\Desktop\Events_Project_Final_Version\Event_BackEnd\EVENTS\EVENTS\bin\System.Web.Http.Cors.dll
+C:\Users\Murad\Desktop\Events_Project_Final_Version\Event_BackEnd\EVENTS\EVENTS\bin\System.Web.Http.dll
+C:\Users\Murad\Desktop\Events_Project_Final_Version\Event_BackEnd\EVENTS\EVENTS\bin\System.Web.Http.WebHost.dll
+C:\Users\Murad\Desktop\Events_Project_Final_Version\Event_BackEnd\EVENTS\EVENTS\bin\Newtonsoft.Json.xml
+C:\Users\Murad\Desktop\Events_Project_Final_Version\Event_BackEnd\EVENTS\EVENTS\bin\System.Net.Http.Formatting.xml
+C:\Users\Murad\Desktop\Events_Project_Final_Version\Event_BackEnd\EVENTS\EVENTS\bin\System.Web.Http.xml
+C:\Users\Murad\Desktop\Events_Project_Final_Version\Event_BackEnd\EVENTS\EVENTS\bin\System.Web.Http.Cors.xml
+C:\Users\Murad\Desktop\Events_Project_Final_Version\Event_BackEnd\EVENTS\EVENTS\bin\System.Web.Http.WebHost.xml
+C:\Users\Murad\Desktop\Events_Project_Final_Version\Event_BackEnd\EVENTS\EVENTS\obj\Release\EVENTS.csprojResolveAssemblyReference.cache
+C:\Users\Murad\Desktop\Events_Project_Final_Version\Event_BackEnd\EVENTS\EVENTS\obj\Release\EVENTS.dll
+C:\Users\Murad\Desktop\Events_Project_Final_Version\Event_BackEnd\EVENTS\EVENTS\obj\Release\EVENTS.pdb

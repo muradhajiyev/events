@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="EventsMaterialTheme" parent="EventsMaterialTheme.Base">
+        <!-- Customize your theme here. -->
+    </style>
+    
+    <style name="EventsMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    // Collapsing Tool Bar text style
+    <style name="HeaderTitleStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">Arial</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+    // Icon with textview
+    <style name="behindMenuItemLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:drawableLeft">@mipmap/start_date</item>
+        <item name="android:textColor">#d2d2d2</item>
+    </style>
+
+</resources>
